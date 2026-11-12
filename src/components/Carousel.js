@@ -9,7 +9,7 @@ export default function Carousel() {
       id: 'c1',
       nombre: 'iPhone 18 Pro Max',
       badge: 'NUEVO',
-      uri: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600',
+      uri: 'https://images.unsplash.com/photo-1759588071781-2c3ba9128497?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
     },
     {
       id: 'c2',
@@ -30,7 +30,7 @@ export default function Carousel() {
       <ScrollView horizontal pagingEnabled showsHorizontalScrollIndicator={false}>
         {destacados.map((item) => (
           <View key={item.id} style={styles.slide}>
-            <Image source={{ uri: item.uri }} style={styles.imagen} />
+            <Image source={{ uri: item.uri }} style={styles.imagen}  resizeMode="contain"/>
             <View style={styles.overlay}>
               <Text style={styles.badge}>{item.badge}</Text>
               <Text style={styles.tituloSlide}>{item.nombre}</Text>

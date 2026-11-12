@@ -9,7 +9,7 @@ export default function NavBar({ vistaActual, setVistaActual }) {
         onPress={() => setVistaActual('Inicio')}
       >
         <Text style={[styles.textoNav, vistaActual === 'Inicio' && styles.textoActivo]}>
-          🏠 Inicio
+          Inicio
         </Text>
       </TouchableOpacity>
 
@@ -18,7 +18,7 @@ export default function NavBar({ vistaActual, setVistaActual }) {
         onPress={() => setVistaActual('Ofertas')}
       >
         <Text style={[styles.textoNav, vistaActual === 'Ofertas' && styles.textoActivo]}>
-          🔥 Ofertas Fin de Año
+          Ofertas Fin de Año
         </Text>
       </TouchableOpacity>
     </View>
